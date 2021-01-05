@@ -14,11 +14,18 @@ jobs:
         with:
           java-version: 1.8
 
+      - name: Restore release keystore
+        run: echo "${{ secrets.ENCODED_KEYSTORE }}" | base64 --decode > app/keystore.release
+
       - name: "Give Permissions"
         run: chmod +x gradlew
 
-      - name: "Builds debug build"
-        run: ./gradlew assembleRelese
+      - name: Generate APK
+        run: ./gradlew assembleRelease
+        env:
+          MY_STORE_PASSWORD: ${{ secrets.MY_STORE_PASSWORD }}
+          MY_KEY_PASSWORD: ${{ secrets.MY_KEY_PASSWORD }}
+          MY_KEY_ALIAS: ${{ secrets.MY_KEY_ALIAS }}
 
       - name: Unit tests
         run: ./gradlew testReleaseUnitTest

@@ -12,6 +12,20 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    signingConfigs {
+        release {
+            storeFile file('keystore.release')
+            keyAlias System.getenv("MY_KEY_ALIAS")
+            storePassword System.getenv("MY_KEY_PASSWORD")
+            keyPassword System.getenv("MY_STORE_PASSWORD")
+        }
+        debug {
+            storeFile file('C:/Users/hazi/workspace/CloudBox/app/keystore/debug.keystore')
+            keyAlias 'androiddebugkey'
+            storePassword 'android'
+            keyPassword 'android'
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
