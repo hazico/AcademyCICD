@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "223073787791",
+    "project_id": "academycicd",
+    "storage_bucket": "academycicd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:223073787791:android:5b2f173c90e6480c2e35fa",
+        "android_client_info": {
+          "package_name": "com.corly.academicicd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "223073787791-nmg859oebqi50mj29hol075l3gocsql6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.corly.academicicd",
+            "certificate_hash": "9125323daad88c54484ccbd4ef9409a1900ab289"
+          }
+        },
+        {
+          "client_id": "223073787791-20fbqo88p7heboeptp22lvi2hp9rtg08.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgdkhLfXk3XpLKiZyLbTvTbw_mRpzO2jY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "223073787791-20fbqo88p7heboeptp22lvi2hp9rtg08.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
