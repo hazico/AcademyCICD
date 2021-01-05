@@ -19,12 +19,7 @@ android {
             storePassword System.getenv("MY_KEY_PASSWORD")
             keyPassword System.getenv("MY_STORE_PASSWORD")
         }
-        debug {
-            storeFile file('C:/Users/hazi/workspace/CloudBox/app/keystore/debug.keystore')
-            keyAlias 'androiddebugkey'
-            storePassword 'android'
-            keyPassword 'android'
-        }
+
     }
     buildTypes {
         release {
